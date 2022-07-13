@@ -5,6 +5,7 @@ import { NotFoundComponent } from './modules/not-found/not-found.component';
 const routes: Routes = [
   { path: '', redirectTo: 'forms', pathMatch: 'full' },
   { path: 'forms', loadChildren: () => import('./modules/forms/forms.module').then(m => m.FormsModule) },
+  { path: 'sougov', loadChildren: () => import('./modules/sougov/sougov.module').then(m => m.SougovModule) },
   { path: '**', component: NotFoundComponent }
 ];
 

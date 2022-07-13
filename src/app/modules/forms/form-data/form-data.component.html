@@ -1,2 +1,20 @@
-<input type="file" name="upload" id="upload" aria-label="Envio de arquivos" (change)="carregaHtml($event)" #file>
-<button (click)="enviaHtml()" [disabled]="file == null">Enviar HTML</button>
+<div class="container">
+  <div class="item upload">
+    <input type="file" name="upload" id="upload" aria-label="Envio de arquivos" (change)=" carregaHtml($event)"
+      accept=".html">
+    <div class="upload_label">
+      <label>
+        Arquivo: {{file}}
+      </label>
+    </div>
+
+  </div>
+
+
+
+  <div class="item">
+    <button mat-raised-button (click)="enviaHtml()" [disabled]="file==''" color="primary">
+      <mat-icon class="mat-18">upload</mat-icon>
+    </button>
+  </div>
+</div>

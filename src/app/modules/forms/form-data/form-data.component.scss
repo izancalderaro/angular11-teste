@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  align-items: stretch;
+  margin: 0 auto;
+  min-height: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 5px;
+}
+
+#upload {
+  // border: 1px dashed #ccc;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.upload {
+  position: relative;
+  border: 3px dashed #ccc;
+  width: 60%;
+}
+
+.upload_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 1.5em;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

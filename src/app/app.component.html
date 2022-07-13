@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Angular 11 - Aplicação de testes</span>
+  <span class="example-spacer"></span>
+  <a mat-button routerLink="forms/formdata">Form data</a>
+  <a mat-button routerLink="sougov">Sou Gov.br</a>
+</mat-toolbar>
+
+<section>
+  <router-outlet></router-outlet>
+</section>
