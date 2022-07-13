@@ -1,1 +1,36 @@
-<p>sougov works!</p>
+<form (ngSubmit)="onSubmit()">
+
+  <div fxLayout="column" fxLayoutAlign="start start">
+    <mat-form-field [appearance]="aparencia">
+      <input matInput placeholder="Response type">
+    </mat-form-field>
+
+    <mat-form-field [appearance]="aparencia">
+      <input matInput placeholder="client_id">
+    </mat-form-field>
+
+    <mat-form-field [appearance]="aparencia">
+      <input matInput placeholder="redirect_uri">
+    </mat-form-field>
+
+    <mat-form-field [appearance]="aparencia">
+      <input matInput placeholder="nonce">
+    </mat-form-field>
+
+    <mat-form-field [appearance]="aparencia">
+      <input matInput placeholder="state">
+    </mat-form-field>
+
+    <mat-form-field [appearance]="aparencia">
+      <input matInput placeholder="code_challenge">
+    </mat-form-field>
+
+    <mat-form-field [appearance]="aparencia">
+      <input matInput placeholder="code_challenge_method">
+    </mat-form-field>
+  </div>
+  <div fxLayout="row">
+    <button mat-raised-button type="submit">Entrar com GOV.BR.</button>
+  </div>
+
+</form>

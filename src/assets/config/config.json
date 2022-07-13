@@ -1,0 +1,4 @@
+{
+  "urlSso": "https://sso.staging.acesso.gov.br/authorize",
+  "urlToken": "https://sso.staging.acesso.gov.br/token"
+}
