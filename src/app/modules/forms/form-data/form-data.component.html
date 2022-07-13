@@ -1,0 +1,2 @@
+<input type="file" name="upload" id="upload" aria-label="Envio de arquivos" (change)="carregaHtml($event)" #file>
+<button (click)="enviaHtml()" [disabled]="file == null">Enviar HTML</button>
