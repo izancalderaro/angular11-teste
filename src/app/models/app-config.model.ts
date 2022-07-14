@@ -1,4 +1,4 @@
-export interface AppConfig{
+export interface AppConfig {
   urlSso?: string;
-  urlToken?: string
+  urlToken?: string;
 }

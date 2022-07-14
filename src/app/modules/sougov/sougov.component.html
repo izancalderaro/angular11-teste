@@ -1,36 +1,49 @@
-<form (ngSubmit)="onSubmit()">
+<form (ngSubmit)="onSubmit()" [formGroup]="formAuth">
 
-  <div fxLayout="column" fxLayoutAlign="start start">
-    <mat-form-field [appearance]="aparencia">
-      <input matInput placeholder="Response type">
-    </mat-form-field>
+  <div class="form">
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <mat-form-field [appearance]="aparencia">
+        <input matInput placeholder="Response type" formControlName="response_type">
+      </mat-form-field>
 
-    <mat-form-field [appearance]="aparencia">
-      <input matInput placeholder="client_id">
-    </mat-form-field>
+      <mat-form-field [appearance]="aparencia">
+        <input matInput placeholder="client_id" formControlName="client_id">
+      </mat-form-field>
+    </div>
 
-    <mat-form-field [appearance]="aparencia">
-      <input matInput placeholder="redirect_uri">
-    </mat-form-field>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <mat-form-field [appearance]="aparencia">
+        <input matInput placeholder="scope" formControlName="scope">
+      </mat-form-field>
 
-    <mat-form-field [appearance]="aparencia">
-      <input matInput placeholder="nonce">
-    </mat-form-field>
+      <mat-form-field [appearance]="aparencia">
+        <input matInput placeholder="redirect_uri" formControlName="redirect_uri">
+      </mat-form-field>
+    </div>
 
-    <mat-form-field [appearance]="aparencia">
-      <input matInput placeholder="state">
-    </mat-form-field>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <mat-form-field [appearance]="aparencia">
+        <input matInput placeholder="nonce" formControlName="nonce">
+      </mat-form-field>
 
-    <mat-form-field [appearance]="aparencia">
-      <input matInput placeholder="code_challenge">
-    </mat-form-field>
+      <mat-form-field [appearance]="aparencia">
+        <input matInput placeholder="state" formControlName="state">
+      </mat-form-field>
+    </div>
 
-    <mat-form-field [appearance]="aparencia">
-      <input matInput placeholder="code_challenge_method">
-    </mat-form-field>
-  </div>
-  <div fxLayout="row">
-    <button mat-raised-button type="submit">Entrar com GOV.BR.</button>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <mat-form-field [appearance]="aparencia">
+        <input matInput placeholder="code_challenge" formControlName="code_challenge">
+      </mat-form-field>
+
+      <mat-form-field [appearance]="aparencia">
+        <input matInput placeholder="code_challenge_method" formControlName="code_challenge_method">
+      </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <button mat-raised-button type="submit">Entrar com GOV.BR.</button>
+    </div>
   </div>
 
 </form>
