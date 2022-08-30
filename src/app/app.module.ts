@@ -1,12 +1,12 @@
 import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NotFoundComponent } from './modules/not-found/not-found.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppConfigService } from './service/app-config.service';
 import { AppConfig } from './models/app-config.model';
+import { NotFoundComponent } from './modules/not-found/not-found.component';
+import { AppConfigService } from './service/app-config.service';
 import { SharedModule } from './shared/shared.module';
 
 export function initializeApp(appConfigService: AppConfigService) {

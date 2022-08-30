@@ -1,8 +1,7 @@
 <div class="container">
-  <div class="item upload">
-    <input type="file" name="upload" id="upload" aria-label="Envio de arquivos" (change)=" carregaHtml($event)"
-      accept=".html">
-    <div class="upload_label">
+  <div class="dropzone">
+    <input type="file" id="arquivo" aria-label="Envio de arquivos" (change)=" carregaHtml($event)" accept=".html">
+    <div class="label--arquivo">
       <label>
         Arquivo: {{file}}
       </label>
@@ -11,10 +10,8 @@
   </div>
 
 
+  <button mat-raised-button (click)="enviaHtml()" [disabled]="file==''" color="primary">
+    <mat-icon class="mat-18">upload</mat-icon>
+  </button>
 
-  <div class="item">
-    <button mat-raised-button (click)="enviaHtml()" [disabled]="file==''" color="primary">
-      <mat-icon class="mat-18">upload</mat-icon>
-    </button>
-  </div>
 </div>

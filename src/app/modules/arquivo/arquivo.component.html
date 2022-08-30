@@ -1,0 +1,31 @@
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="5px" fxLayoutAlign="space-evenly stretch">
+
+  <div class="element" fxFlex="auto">
+    <div class="flex font--bold cabecalho--bg1">Ler arquivo</div>
+
+    <div class="flex conteudo">
+      <button mat-raised-button [color]="color1" type="submit" (click)="lerArquivo()">Ler</button>
+    </div>
+
+  </div>
+
+  <div class="element" fxFlex="auto">
+    <div class="flex font--bold cabecalho--bg1">Gerar arquivo</div>
+
+    <div class="flex conteudo">
+      <button mat-raised-button [color]="color2" type="submit" (click)="gerarArquivo()">Gerar</button>
+    </div>
+
+  </div>
+
+  <div class="element" fxFlex="auto">
+    <div class="flex font--bold cabecalho--bg1">Apagar arquivo</div>
+
+    <div class="flex conteudo">
+      <button mat-raised-button [color]="color3" type="submit" (click)="apagarArquivo()">Apagar</button>
+    </div>
+
+  </div>
+
+
+</div>

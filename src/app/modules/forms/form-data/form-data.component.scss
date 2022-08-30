@@ -3,20 +3,26 @@
 }
 
 .container {
-  width: 80%;
   display: flex;
-  align-items: stretch;
   margin: 0 auto;
   min-height: 100px;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .item {
-  flex: 1;
-  margin: 5px;
+  margin-left: 5px;
 }
 
-#upload {
-  // border: 1px dashed #ccc;
+
+.dropzone {
+  position: relative;
+  border: 3px dashed #ccc;
+  border-right: 0;
+  width: 60%;
+}
+
+#arquivo {
   position: relative;
   height: 100%;
   width: 100%;
@@ -25,13 +31,7 @@
   cursor: pointer;
 }
 
-.upload {
-  position: relative;
-  border: 3px dashed #ccc;
-  width: 60%;
-}
-
-.upload_label {
+.label--arquivo {
   position: absolute;
   top: 0;
   left: 0;
